@@ -9,9 +9,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background: radial-gradient(circle, #5c0725 10%, transparent 11%);
+    background-size: 3em 3em;
+    background-color: #000000;
+    opacity: 1;
+    color: white;
 }
 
 .grid-container {
+    position: relative;
     display: grid;
     place-items: center;
     grid-template-columns: 100%;
@@ -20,32 +26,48 @@ body {
     gap: 1rem;
     background-image: url("../images/software-g7e48e1e65_1280.jpg");
     background-size: cover;
-    height: 15vh;
     width: 100vw;
+    padding: 1rem 0;
+}
 
+header>nav {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    right: 10%;
+}
+
+header>nav>a>button {
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    background-color: #ffc107;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
 }
 
 #prof-pic {
     border-radius: 50%;
 }
 
-main {
-    margin: 5% 0;
-}
+main {}
 
 h1 {
     width: 100%;
     text-align: center;
+    font-size: 2rem;
 }
 
 h3 {
     padding-left: 10px;
+    font-size: 1.5rem;
 }
 
 h1,
 h3 {
-    color: #005677;
-    background-color: #C4C4C4;
+    font-weight: bold;
     letter-spacing: 5px;
 }
 
@@ -60,12 +82,21 @@ h3 {
 section>ul {
     margin-left: 20px;
     list-style-position: inside;
+    font-size: 1.2rem;
 }
+
 
 section>ul>li {
     margin: 1rem 0;
 }
 
+li>ul {
+    padding-left: 0.5rem;
+}
+
+li>ul> :first-child {
+    font-weight: bold;
+}
 
 .d-flex {
     display: flex;
@@ -76,7 +107,7 @@ section>ul>li {
 }
 
 footer {
-    height: 15vh;
+    height: 5vh;
     background-color: #222b2f;
     padding: 2rem;
     display: grid;
