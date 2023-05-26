@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grid-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 100%;
+    background-color: #e6e6e6;
+    height: fit-content;
+    gap: 1rem;
+    background-image: url("../images/software-g7e48e1e65_1280.jpg");
+    background-size: cover;
+    height: 15vh;
+    width: 100vw;
+
+}
+
+#prof-pic {
+    border-radius: 50%;
+}
+
+main {
+    margin: 5% 0;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+h3 {
+    padding-left: 10px;
+}
+
+h1,
+h3 {
+    color: #005677;
+    background-color: #C4C4C4;
+    letter-spacing: 5px;
+}
+
+.type-disc span {
+    font-style: italic;
+}
+
+.type-none {
+    list-style-type: none;
+}
+
+section>ul {
+    margin-left: 20px;
+    list-style-position: inside;
+}
+
+section>ul>li {
+    margin: 1rem 0;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.info-type {
+    font-weight: bold;
+}
+
+footer {
+    height: 15vh;
+    background-color: #222b2f;
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+}
+
+.media {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+}
+
+.media>li {
+    font-size: 3rem;
+}
